@@ -79,5 +79,73 @@ p{
         }
     }
 } 
+@media screen and(max-width:992px){
+    .top-bar{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+}
+.images{
+    img{
+        width: 100%;
+    }
+    .sign-up{
+        height: 321px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ecf0f1;
+    .sign{
+        width: 70%;
+        text-align: center;
+        button{
+            width: 81%;
+        height: 58px;
+        border-radius: 50px;
+        outline: none;
+        }
+    }
+    }
+}
+// .owl-carousel{
+//     .owl-theme{
+//         .owl-loaded{
+//             .owl-drag{
+//                 position: relative;
+//             }
+//         }
+//     }
+// }
+// button{
+//     .owl-prev{
+//         .disabled{
+//             position: absolute;
+//             left: -50px;
+//             font-size: 70px;
+//             top: 74px;
+//             }
+//         }
+//     }
+    
+        // .owl-prev{
+        //     .disabled{
+        //         position: absolute;
+        //         left: -50px;
+        //         font-size: 70px;
+        //         top: 74px;
+        //     }
+        // }
+    
+    // button{
+    //     .owl-next{
+    //         position: absolute;
+    //         left: -50px;
+    //         font-size: 70px;
+    //         top: 74px;
+    //     }
+    // }
+
 
 

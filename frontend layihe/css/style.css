@@ -77,4 +77,43 @@ p {
   position: absolute;
   right: 2em;
 }
+
+@media screen and (max-width: 992px) {
+  .top-bar {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+}
+
+.images img {
+  width: 100%;
+}
+
+.images .sign-up {
+  height: 321px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #ecf0f1;
+}
+
+.images .sign-up .sign {
+  width: 70%;
+  text-align: center;
+}
+
+.images .sign-up .sign button {
+  width: 81%;
+  height: 58px;
+  border-radius: 50px;
+  outline: none;
+}
 /*# sourceMappingURL=style.css.map */
