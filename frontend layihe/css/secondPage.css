@@ -1,0 +1,256 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+a:hover {
+  color: #333333;
+}
+
+p {
+  color: #929292;
+}
+
+header .social li {
+  padding: 0 0.5em 0 0;
+  font-size: 23px;
+}
+
+header nav ul li {
+  padding: 0 1.5em 0 0;
+}
+
+header select {
+  background: transparent;
+  border: none;
+  color: #929292;
+  outline: none;
+}
+
+.carousel-inner .new-collection {
+  position: absolute;
+  top: 50%;
+  color: white;
+  left: 39%;
+  letter-spacing: 0.2em;
+}
+
+.carousel-inner .leather-bags {
+  position: absolute;
+  top: 20%;
+  color: white;
+  left: 31%;
+  font-size: 5em;
+}
+
+.carousel-inner button {
+  position: absolute;
+  top: 65%;
+  left: 40%;
+  width: 12%;
+  border-radius: 26px;
+  height: 3em;
+}
+
+.carousel-inner button:hover {
+  background: #d35400;
+}
+
+.images img {
+  width: 100%;
+}
+
+.images .img {
+  position: relative;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.images .img a {
+  position: absolute;
+  top: 78%;
+  left: 32%;
+  color: black;
+  width: 40%;
+  height: 2.5em;
+  background: #fefefe;
+  text-align: center;
+}
+
+.images .img a:hover {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  background: #e74c3c;
+  color: white;
+  text-decoration: none;
+}
+
+.featured-products img {
+  width: 100%;
+}
+
+.featured-products ul li {
+  padding: 0 2em 0 0;
+}
+
+.item {
+  position: relative;
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.item .overlay {
+  width: 90%;
+  height: 81%;
+  position: absolute;
+  top: 0;
+  left: 5%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.item .overlay .card {
+  position: absolute;
+  top: 87%;
+  left: 30%;
+  background: black;
+  border-radius: 30px;
+}
+
+.item .overlay .heart {
+  position: absolute;
+  left: 83%;
+  top: 3%;
+  font-size: 20px;
+  color: white;
+}
+
+.item:hover .overlay {
+  opacity: 1;
+}
+
+.iframe {
+  position: relative;
+}
+
+.iframe img {
+  width: 100%;
+}
+
+.iframe .beauty {
+  position: absolute;
+  top: 39%;
+  left: 42%;
+  font-size: 40px;
+  color: white;
+}
+
+.iframe h3 {
+  position: absolute;
+  top: 45%;
+  left: 38%;
+  font-size: 60px;
+  color: white;
+  letter-spacing: 0.1em;
+}
+
+.iframe .play-iframe {
+  position: absolute;
+  top: 55%;
+  left: 45%;
+  font-size: 20px;
+  color: white;
+}
+
+.img:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.img {
+  overflow: hidden;
+}
+
+.img img {
+  width: 100%;
+}
+
+.instagram img {
+  width: 100%;
+}
+
+footer {
+  background: #f0f0f0;
+}
+
+footer .get-in-touch p {
+  font-size: 13px;
+}
+
+footer li {
+  padding: 0.3em;
+  color: #888888;
+  font-size: 13px;
+}
+
+footer li i {
+  font-size: 20px;
+  color: #888888;
+}
+
+footer li i:hover {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  color: #e67e22;
+  cursor: pointer;
+}
+
+footer li:hover {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  color: chocolate;
+  cursor: pointer;
+}
+
+footer .email button {
+  width: 53%;
+  height: 41px;
+  border-radius: 50px;
+  outline: none;
+}
+
+footer .email button:hover {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  background: #e67e22;
+  cursor: pointer;
+}
+
+footer .email input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid grey;
+  outline: none;
+  background: transparent;
+}
+/*# sourceMappingURL=secondPage.css.map */
