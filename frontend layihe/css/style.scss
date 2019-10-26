@@ -2,7 +2,6 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 li {
   list-style: none;
 }
@@ -15,19 +14,17 @@ ul {
 a {
   text-decoration: none;
   color: #333333;
-
 }
-a:hover{
-    color: #333333;
+a:hover {
+  color: #333333;
 }
-p{
-    color: #929292;
+p {
+  color: #929292;
 }
 
 .top-bar {
   background-color: #f5f5f5;
 }
-
 .select {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,13 +32,13 @@ p{
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  span{
-      color: #929292;
+  span {
+    color: #929292;
   }
-  select{
-      background: transparent;
-      border: none;
-      color: #929292;
+  select {
+    background: transparent;
+    border: none;
+    color: #929292;
   }
 }
 
@@ -50,102 +47,361 @@ p{
     padding: 0 0.4em 0 0;
     font-size: 18px;
     a {
-        color: #888888;
-      }
+      color: #888888;
+    }
   }
 }
 
-.logo{
-    nav{
-        ul{
-            li{
-                padding: 0.7em;
-                .sale{
-                    color: #E65540;
-                }
-            }
+.logo {
+  nav {
+    ul {
+      li {
+        padding: 0.7em;
+        .sale {
+          color: #e65540;
         }
+      }
     }
-    .icon{
-        a{
-            padding: 1em;
-        }
-        .backet{
-            position: relative;
-        }
-        span{
-            position: absolute;
-            right: 2em;
-        }
+  }
+  .icon {
+    a {
+      padding: 1em;
     }
-} 
-@media screen and(max-width:992px){
-    .top-bar{
-        display: none;
+    .backet {
+      position: relative;
     }
-    nav{
-        display: none;
+    span {
+      position: absolute;
+      right: 2em;
     }
+  }
 }
-.images{
-    img{
-        width: 100%;
+.carousel-inner {
+  .women-collection {
+    position: absolute;
+    top: 26%;
+    color: white;
+    left: 39%;
+    letter-spacing: 0.2em;
+  }
+  .new-arrival {
+    position: absolute;
+    top: 33%;
+    color: white;
+    left: 31%;
+    font-size: 5em;
+  }
+  button {
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    width: 12%;
+    border-radius: 26px;
+    height: 3em;
+  }
+  button:hover {
+    background: #d35400;
+  }
+}
+
+@media screen and(max-width:992px) {
+  .top-bar {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+}
+.img:hover img {
+  transform: scale(1.1);
+  transition: all 0.4s linear;
+}
+.img {
+  overflow: hidden;
+}
+.item {
+  position: relative;
+  text-align: center;
+}
+
+.item .overlay {
+  width: 100%;
+  height: 85%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease-in-out;
+}
+
+.item .first {
+  display: block;
+  position: relative;
+  transition: all 0.4s linear;
+}
+
+.item:hover .overlay {
+  opacity: 1;
+}
+.card {
+  position: absolute;
+  top: 87%;
+  left: 30%;
+  background: black;
+  border-radius: 30px;
+}
+.heart {
+  position: absolute;
+  left: 83%;
+  top: 3%;
+  font-size: 20px;
+  color: white;
+}
+
+.images {
+  .img {
+    position: relative;
+    transition: 0.6s;
+
+    a {
+      position: absolute;
+      top: 78%;
+      left: 32%;
+      color: black;
+      width: 40%;
+      height: 2.5em;
+      background: #fefefe;
+      text-align: center;
     }
-    .sign-up{
-        height: 321px;
+    a:hover {
+      transition-duration: 0.5s;
+      background: #d35400;
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+  .sign-up {
+    height: 321px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #ecf0f1;
-    .sign{
-        width: 70%;
-        text-align: center;
-        button{
-            width: 81%;
+    background: #f0f0f0;
+    .sign {
+      width: 70%;
+      text-align: center;
+      button {
+        width: 81%;
         height: 58px;
         border-radius: 50px;
         outline: none;
-        }
+      }
+      button:hover {
+        transition-duration: 0.5s;
+        background: #e67e22;
+        cursor: pointer;
+      }
     }
-    }
+  }
 }
-// .owl-carousel{
-//     .owl-theme{
-//         .owl-loaded{
-//             .owl-drag{
-//                 position: relative;
-//             }
-//         }
-//     }
-// }
-// button{
-//     .owl-prev{
-//         .disabled{
-//             position: absolute;
-//             left: -50px;
-//             font-size: 70px;
-//             top: 74px;
-//             }
-//         }
-//     }
-    
-        // .owl-prev{
-        //     .disabled{
-        //         position: absolute;
-        //         left: -50px;
-        //         font-size: 70px;
-        //         top: 74px;
-        //     }
-        // }
-    
-    // button{
-    //     .owl-next{
-    //         position: absolute;
-    //         left: -50px;
-    //         font-size: 70px;
-    //         top: 74px;
-    //     }
-    // }
 
+.second-carousel {
+  position: relative;
+  .owl-prev {
+    position: absolute;
+    left: -63px;
+    top: 80px;
+    span {
+      font-size: 60px;
+    }
+  }
+  .owl-next {
+    position: absolute;
+    right: -63px;
+    top: 80px;
+    span {
+      font-size: 60px;
+    }
+  }
+}
+.the-girl {
+  background: #f2f2f2;
+  .girl {
+    position: relative;
+    p {
+      position: absolute;
+      top: 140px;
+      left: 182px;
+      font-size: 40px;
+    }
+    h3 {
+      position: absolute;
+      top: 200px;
+      left: 145px;
+      font-size: 60px;
+    }
+    a {
+      position: absolute;
+      top: 270px;
+      left: 180px;
+      font-size: 20px;
+      letter-spacing: 4px;
+    }
+  }
+}
+.spectacles {
+  position: relative;
+  a {
+    position: absolute;
+    top: 54%;
+    left: 35%;
+  }
+  .first-price {
+    position: absolute;
+    top: 61%;
+    left: 40%;
+  }
+  .second-price {
+    position: absolute;
+    top: 61%;
+    left: 50%;
+  }
+  .days {
+    position: absolute;
+    border: 1px solid #dbdbdb;
+    top: 78%;
+    left: 23%;
+    width: 12%;
+    height: 4em;
+    .first {
+      position: absolute;
+      top: 15%;
+      left: 33%;
+      color: black;
+    }
+    .second {
+      position: absolute;
+      top: 40%;
+      left: 28%;
+    }
+  }
+}
+.hrs {
+  position: absolute;
+  border: 1px solid #dbdbdb;
+  top: 78%;
+  left: 37%;
+  width: 12%;
+  height: 4em;
+  .first {
+    position: absolute;
+    top: 15%;
+    left: 33%;
+    color: black;
+  }
+  .second {
+    position: absolute;
+    top: 40%;
+    left: 32%;
+  }
+}
+.mins {
+  position: absolute;
+  border: 1px solid #dbdbdb;
+  top: 78%;
+  left: 51%;
+  width: 12%;
+  height: 4em;
+  .first {
+    position: absolute;
+    top: 15%;
+    left: 33%;
+    color: black;
+  }
+  .second {
+    position: absolute;
+    top: 40%;
+    left: 28%;
+  }
+}
+.secs {
+  position: absolute;
+  border: 1px solid #dbdbdb;
+  top: 78%;
+  left: 65%;
+  width: 12%;
+  height: 4em;
+  .first {
+    position: absolute;
+    top: 15%;
+    left: 33%;
+    color: black;
+  }
+  .second {
+    position: absolute;
+    top: 40%;
+    left: 28%;
+  }
+}
+.our-blog {
+  img {
+    width: 100%;
+  }
+}
+.instagram {
+  img {
+    width: 100%;
+  }
+}
+footer {
+  background: #f0f0f0;
+  .get-in-touch {
+    p {
+      font-size: 13px;
+    }
+  }
 
-
+  li {
+    padding: 0.3em;
+    color: #888888;
+    font-size: 13px;
+    i {
+      font-size: 20px;
+      color: #888888;
+    }
+    i:hover {
+      transition-duration: 0.5s;
+      color: #e67e22;
+      cursor: pointer;
+    }
+  }
+  li:hover {
+    transition-duration: 0.5s;
+    color: chocolate;
+    cursor: pointer;
+  }
+  .email {
+    button {
+      width: 53%;
+      height: 41px;
+      border-radius: 50px;
+      outline: none;
+    }
+    button:hover {
+      transition-duration: 0.5s;
+      background: #e67e22;
+      cursor: pointer;
+    }
+    input {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid grey;
+      outline: none;
+      background: transparent;
+    }
+  }
+}

@@ -62,7 +62,7 @@ p {
 }
 
 .logo nav ul li .sale {
-  color: #E65540;
+  color: #e65540;
 }
 
 .logo .icon a {
@@ -78,6 +78,35 @@ p {
   right: 2em;
 }
 
+.carousel-inner .women-collection {
+  position: absolute;
+  top: 26%;
+  color: white;
+  left: 39%;
+  letter-spacing: 0.2em;
+}
+
+.carousel-inner .new-arrival {
+  position: absolute;
+  top: 33%;
+  color: white;
+  left: 31%;
+  font-size: 5em;
+}
+
+.carousel-inner button {
+  position: absolute;
+  top: 65%;
+  left: 40%;
+  width: 12%;
+  border-radius: 26px;
+  height: 3em;
+}
+
+.carousel-inner button:hover {
+  background: #d35400;
+}
+
 @media screen and (max-width: 992px) {
   .top-bar {
     display: none;
@@ -85,6 +114,86 @@ p {
   nav {
     display: none;
   }
+}
+
+.img:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.img {
+  overflow: hidden;
+}
+
+.item {
+  position: relative;
+  text-align: center;
+}
+
+.item .overlay {
+  width: 100%;
+  height: 85%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.item .first {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.item:hover .overlay {
+  opacity: 1;
+}
+
+.card {
+  position: absolute;
+  top: 87%;
+  left: 30%;
+  background: black;
+  border-radius: 30px;
+}
+
+.heart {
+  position: absolute;
+  left: 83%;
+  top: 3%;
+  font-size: 20px;
+  color: white;
+}
+
+.images .img {
+  position: relative;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.images .img a {
+  position: absolute;
+  top: 78%;
+  left: 32%;
+  color: black;
+  width: 40%;
+  height: 2.5em;
+  background: #fefefe;
+  text-align: center;
+}
+
+.images .img a:hover {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  background: #d35400;
+  color: white;
+  text-decoration: none;
 }
 
 .images img {
@@ -102,7 +211,7 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #ecf0f1;
+  background: #f0f0f0;
 }
 
 .images .sign-up .sign {
@@ -115,5 +224,239 @@ p {
   height: 58px;
   border-radius: 50px;
   outline: none;
+}
+
+.images .sign-up .sign button:hover {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  background: #e67e22;
+  cursor: pointer;
+}
+
+.second-carousel {
+  position: relative;
+}
+
+.second-carousel .owl-prev {
+  position: absolute;
+  left: -63px;
+  top: 80px;
+}
+
+.second-carousel .owl-prev span {
+  font-size: 60px;
+}
+
+.second-carousel .owl-next {
+  position: absolute;
+  right: -63px;
+  top: 80px;
+}
+
+.second-carousel .owl-next span {
+  font-size: 60px;
+}
+
+.the-girl {
+  background: #f2f2f2;
+}
+
+.the-girl .girl {
+  position: relative;
+}
+
+.the-girl .girl p {
+  position: absolute;
+  top: 140px;
+  left: 182px;
+  font-size: 40px;
+}
+
+.the-girl .girl h3 {
+  position: absolute;
+  top: 200px;
+  left: 145px;
+  font-size: 60px;
+}
+
+.the-girl .girl a {
+  position: absolute;
+  top: 270px;
+  left: 180px;
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+
+.spectacles {
+  position: relative;
+}
+
+.spectacles a {
+  position: absolute;
+  top: 54%;
+  left: 35%;
+}
+
+.spectacles .first-price {
+  position: absolute;
+  top: 61%;
+  left: 40%;
+}
+
+.spectacles .second-price {
+  position: absolute;
+  top: 61%;
+  left: 50%;
+}
+
+.spectacles .days {
+  position: absolute;
+  border: 1px solid #dbdbdb;
+  top: 78%;
+  left: 23%;
+  width: 12%;
+  height: 4em;
+}
+
+.spectacles .days .first {
+  position: absolute;
+  top: 15%;
+  left: 33%;
+  color: black;
+}
+
+.spectacles .days .second {
+  position: absolute;
+  top: 40%;
+  left: 28%;
+}
+
+.hrs {
+  position: absolute;
+  border: 1px solid #dbdbdb;
+  top: 78%;
+  left: 37%;
+  width: 12%;
+  height: 4em;
+}
+
+.hrs .first {
+  position: absolute;
+  top: 15%;
+  left: 33%;
+  color: black;
+}
+
+.hrs .second {
+  position: absolute;
+  top: 40%;
+  left: 32%;
+}
+
+.mins {
+  position: absolute;
+  border: 1px solid #dbdbdb;
+  top: 78%;
+  left: 51%;
+  width: 12%;
+  height: 4em;
+}
+
+.mins .first {
+  position: absolute;
+  top: 15%;
+  left: 33%;
+  color: black;
+}
+
+.mins .second {
+  position: absolute;
+  top: 40%;
+  left: 28%;
+}
+
+.secs {
+  position: absolute;
+  border: 1px solid #dbdbdb;
+  top: 78%;
+  left: 65%;
+  width: 12%;
+  height: 4em;
+}
+
+.secs .first {
+  position: absolute;
+  top: 15%;
+  left: 33%;
+  color: black;
+}
+
+.secs .second {
+  position: absolute;
+  top: 40%;
+  left: 28%;
+}
+
+.our-blog img {
+  width: 100%;
+}
+
+.instagram img {
+  width: 100%;
+}
+
+footer {
+  background: #f0f0f0;
+}
+
+footer .get-in-touch p {
+  font-size: 13px;
+}
+
+footer li {
+  padding: 0.3em;
+  color: #888888;
+  font-size: 13px;
+}
+
+footer li i {
+  font-size: 20px;
+  color: #888888;
+}
+
+footer li i:hover {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  color: #e67e22;
+  cursor: pointer;
+}
+
+footer li:hover {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  color: chocolate;
+  cursor: pointer;
+}
+
+footer .email button {
+  width: 53%;
+  height: 41px;
+  border-radius: 50px;
+  outline: none;
+}
+
+footer .email button:hover {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  background: #e67e22;
+  cursor: pointer;
+}
+
+footer .email input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid grey;
+  outline: none;
+  background: transparent;
 }
 /*# sourceMappingURL=style.css.map */
