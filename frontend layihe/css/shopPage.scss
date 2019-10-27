@@ -1,0 +1,282 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+a:hover {
+  color: #333333;
+}
+p {
+  color: #929292;
+}
+
+.top-bar {
+  background-color: #f5f5f5;
+}
+
+.select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  span {
+    color: #929292;
+  }
+  select {
+    background: transparent;
+    border: none;
+    color: #929292;
+  }
+}
+
+.social {
+  li {
+    padding: 0 0.4em 0 0;
+    font-size: 18px;
+    a {
+      color: #888888;
+    }
+  }
+}
+
+.logo {
+  nav {
+    ul {
+      li {
+        padding: 0.7em;
+        .sale {
+          color: #e65540;
+        }
+      }
+    }
+  }
+  .icon {
+    a {
+      padding: 1em;
+    }
+    .backet {
+      position: relative;
+    }
+    span {
+      position: absolute;
+      right: 2em;
+    }
+  }
+}
+
+.women {
+  position: relative;
+  .bg-image {
+    width: 100%;
+    height: 239px;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+  }
+  h2 {
+    position: absolute;
+    top: 39%;
+    left: 40%;
+    font-size: 50px;
+    color: #ffffff;
+  }
+  p {
+    position: absolute;
+    top: 65%;
+    left: 35%;
+    font-size: 20px;
+    color: #ffffff;
+  }
+}
+///////////OPTİONS///////////
+.options {
+  .color-button {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  }
+  .categories {
+    li {
+      padding-top: 0.7em;
+      a {
+        transition-duration: 0.4s;
+        color: #888888;
+        text-decoration: none;
+        font-size: 15px;
+      }
+      a:hover {
+        color: chocolate;
+      }
+    }
+  }
+  .filter {
+    border-bottom: 1px solid #e1e1e1;
+  }
+  .filter-bar {
+    .money-filter {
+      border-bottom: 1px solid #e1e1e1;
+      button {
+        width: 80px;
+        height: 35px;
+        border-radius: 22px;
+      }
+    }
+  }
+  .search {
+    position: relative;
+    input {
+      height: 50px;
+      outline: none;
+    }
+    .magnify {
+      position: absolute;
+      top: 50%;
+      right: 5%;
+      transition-duration: 0.3s;
+      font-size: 20px;
+    }
+    .magnify:hover {
+      color: chocolate;
+    }
+  }
+}
+/////////////////////////////
+
+///////////SORT//////////////
+
+.sort {
+  select {
+    border: 1 px solid #e6e6e6;
+    outline: none;
+  }
+}
+/////////////////////////////
+
+//////////PRODUCTS///////////
+.featured-products {
+  img {
+    width: 100%;
+  }
+  ul {
+    li {
+      padding: 0 2em 0 0;
+    }
+  }
+}
+
+.item {
+  position: relative;
+  display: block;
+  position: relative;
+  transition: all 0.4s linear;
+  .overlay {
+    width: 89%;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    left: 5%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.4s ease-in-out;
+    .card {
+      position: absolute;
+      top: 80%;
+      left: 30%;
+      background: black;
+      border-radius: 30px;
+    }
+    .heart {
+      position: absolute;
+      left: 83%;
+      top: 3%;
+      font-size: 20px;
+      color: white;
+    }
+  }
+}
+.item:hover .overlay {
+  opacity: 1;
+}
+/////////////////////////////
+
+.pagination {
+  button {
+    border-radius: 50%;
+    border: 1px solid #f5f5f5;
+    transition-duration: 0.3s;
+  }
+  .first {
+    background: black;
+    color: white;
+  }
+  button:hover {
+    background: black;
+    color: white;
+  }
+}
+
+/////////////////////////FOOTER///////////////
+footer {
+  background: #f0f0f0;
+  .get-in-touch {
+    p {
+      font-size: 13px;
+    }
+  }
+
+  li {
+    padding: 0.3em;
+    color: #888888;
+    font-size: 13px;
+    i {
+      font-size: 20px;
+      color: #888888;
+    }
+    i:hover {
+      transition-duration: 0.5s;
+      color: #e67e22;
+      cursor: pointer;
+    }
+  }
+  li:hover {
+    transition-duration: 0.5s;
+    color: chocolate;
+    cursor: pointer;
+  }
+  .email {
+    button {
+      width: 53%;
+      height: 41px;
+      border-radius: 50px;
+      outline: none;
+    }
+    button:hover {
+      transition-duration: 0.5s;
+      background: #e74c3c;
+      cursor: pointer;
+    }
+    input {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid grey;
+      outline: none;
+      background: transparent;
+    }
+  }
+}
+
+//////////////////////////////////////////////

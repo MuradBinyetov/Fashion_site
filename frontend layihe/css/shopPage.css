@@ -1,0 +1,291 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+a:hover {
+  color: #333333;
+}
+
+p {
+  color: #929292;
+}
+
+.top-bar {
+  background-color: #f5f5f5;
+}
+
+.select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.select span {
+  color: #929292;
+}
+
+.select select {
+  background: transparent;
+  border: none;
+  color: #929292;
+}
+
+.social li {
+  padding: 0 0.4em 0 0;
+  font-size: 18px;
+}
+
+.social li a {
+  color: #888888;
+}
+
+.logo nav ul li {
+  padding: 0.7em;
+}
+
+.logo nav ul li .sale {
+  color: #e65540;
+}
+
+.logo .icon a {
+  padding: 1em;
+}
+
+.logo .icon .backet {
+  position: relative;
+}
+
+.logo .icon span {
+  position: absolute;
+  right: 2em;
+}
+
+.women {
+  position: relative;
+}
+
+.women .bg-image {
+  width: 100%;
+  height: 239px;
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: cover;
+}
+
+.women h2 {
+  position: absolute;
+  top: 39%;
+  left: 40%;
+  font-size: 50px;
+  color: #ffffff;
+}
+
+.women p {
+  position: absolute;
+  top: 65%;
+  left: 35%;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.options .color-button {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.options .categories li {
+  padding-top: 0.7em;
+}
+
+.options .categories li a {
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  color: #888888;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.options .categories li a:hover {
+  color: chocolate;
+}
+
+.options .filter {
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.options .filter-bar .money-filter {
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.options .filter-bar .money-filter button {
+  width: 80px;
+  height: 35px;
+  border-radius: 22px;
+}
+
+.options .search {
+  position: relative;
+}
+
+.options .search input {
+  height: 50px;
+  outline: none;
+}
+
+.options .search .magnify {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  font-size: 20px;
+}
+
+.options .search .magnify:hover {
+  color: chocolate;
+}
+
+.sort select {
+  border: 1 px solid #e6e6e6;
+  outline: none;
+}
+
+.featured-products img {
+  width: 100%;
+}
+
+.featured-products ul li {
+  padding: 0 2em 0 0;
+}
+
+.item {
+  position: relative;
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.item .overlay {
+  width: 89%;
+  height: 80%;
+  position: absolute;
+  top: 0;
+  left: 5%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.item .overlay .card {
+  position: absolute;
+  top: 80%;
+  left: 30%;
+  background: black;
+  border-radius: 30px;
+}
+
+.item .overlay .heart {
+  position: absolute;
+  left: 83%;
+  top: 3%;
+  font-size: 20px;
+  color: white;
+}
+
+.item:hover .overlay {
+  opacity: 1;
+}
+
+.pagination button {
+  border-radius: 50%;
+  border: 1px solid #f5f5f5;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.pagination .first {
+  background: black;
+  color: white;
+}
+
+.pagination button:hover {
+  background: black;
+  color: white;
+}
+
+footer {
+  background: #f0f0f0;
+}
+
+footer .get-in-touch p {
+  font-size: 13px;
+}
+
+footer li {
+  padding: 0.3em;
+  color: #888888;
+  font-size: 13px;
+}
+
+footer li i {
+  font-size: 20px;
+  color: #888888;
+}
+
+footer li i:hover {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  color: #e67e22;
+  cursor: pointer;
+}
+
+footer li:hover {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  color: chocolate;
+  cursor: pointer;
+}
+
+footer .email button {
+  width: 53%;
+  height: 41px;
+  border-radius: 50px;
+  outline: none;
+}
+
+footer .email button:hover {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  background: #e74c3c;
+  cursor: pointer;
+}
+
+footer .email input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid grey;
+  outline: none;
+  background: transparent;
+}
+/*# sourceMappingURL=shopPage.css.map */
