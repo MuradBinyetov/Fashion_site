@@ -1,0 +1,466 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a:hover {
+  color: #888888;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #888888;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  padding-top: 0.7em;
+}
+
+.social li {
+  padding: 0 1em 0 0;
+  font-size: 20px;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.icon a {
+  padding: 1em;
+}
+
+.icon .backet {
+  position: relative;
+}
+
+.icon span {
+  position: absolute;
+  left: 1.9em;
+}
+
+select {
+  background: transparent;
+  border: none;
+  color: #929292;
+  outline: none;
+}
+
+.carousel-inner .women-collection {
+  position: absolute;
+  top: 50%;
+  color: #888888;
+  left: 36%;
+  letter-spacing: 0.2em;
+}
+
+.carousel-inner .new-arrival {
+  position: absolute;
+  top: 26%;
+  color: black;
+  left: 31%;
+  font-size: 5em;
+  letter-spacing: 2px;
+}
+
+.carousel-inner button {
+  position: absolute;
+  top: 65%;
+  left: 40%;
+  width: 12%;
+  border-radius: 26px;
+  height: 3em;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.carousel-inner button:hover {
+  background: #e74c3c;
+  color: white;
+}
+
+.images .img {
+  position: relative;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  overflow: hidden;
+}
+
+.images .img a {
+  position: absolute;
+  top: 78%;
+  left: 32%;
+  color: black;
+  width: 40%;
+  height: 2.5em;
+  background: rgba(255, 255, 255, 0.95);
+  text-align: center;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.images .img a:hover {
+  background: #e74c3c;
+  color: white;
+  text-decoration: none;
+}
+
+.images img {
+  width: 100%;
+}
+
+.images .sign-up {
+  height: 289px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #f2f2f2;
+}
+
+.images .sign-up .sign {
+  width: 70%;
+  text-align: center;
+}
+
+.images .sign-up .sign button {
+  width: 81%;
+  height: 58px;
+  border-radius: 50px;
+  outline: none;
+}
+
+.images .sign-up .sign button:hover {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  background: #e74c3c;
+  cursor: pointer;
+}
+
+.img:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.our-products img {
+  width: 100%;
+}
+
+.item {
+  position: relative;
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.item .overlay {
+  width: 100%;
+  height: 83%;
+  position: absolute;
+  top: 0;
+  left: 0%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.item .overlay .card {
+  position: absolute;
+  top: 82%;
+  left: 25%;
+  background: black;
+  border-radius: 30px;
+}
+
+.item .overlay .heart {
+  position: absolute;
+  left: 83%;
+  top: 3%;
+  font-size: 20px;
+  color: white;
+}
+
+.item:hover .overlay {
+  opacity: 1;
+}
+
+.spectacle {
+  overflow: hidden;
+}
+
+.the-girl {
+  position: relative;
+}
+
+.the-girl img {
+  width: 100%;
+}
+
+.spectacles {
+  position: relative;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+}
+
+.spectacles a {
+  position: absolute;
+  top: 54%;
+  left: 35%;
+}
+
+.spectacles .first-price {
+  position: absolute;
+  top: 61%;
+  left: 40%;
+}
+
+.spectacles .second-price {
+  position: absolute;
+  top: 61%;
+  left: 50%;
+}
+
+.spectacles .days {
+  position: absolute;
+  border: 1px solid #dbdbdb;
+  top: 78%;
+  left: 23%;
+  width: 12%;
+  height: 4em;
+}
+
+.spectacles .days .first {
+  position: absolute;
+  top: 15%;
+  left: 33%;
+  color: black;
+}
+
+.spectacles .days .second {
+  position: absolute;
+  top: 40%;
+  left: 28%;
+}
+
+.spectacles .hrs {
+  position: absolute;
+  border: 1px solid #dbdbdb;
+  top: 78%;
+  left: 37%;
+  width: 12%;
+  height: 4em;
+}
+
+.spectacles .hrs .first {
+  position: absolute;
+  top: 15%;
+  left: 33%;
+  color: black;
+}
+
+.spectacles .hrs .second {
+  position: absolute;
+  top: 40%;
+  left: 32%;
+}
+
+.spectacles .mins {
+  position: absolute;
+  border: 1px solid #dbdbdb;
+  top: 78%;
+  left: 51%;
+  width: 12%;
+  height: 4em;
+}
+
+.spectacles .mins .first {
+  position: absolute;
+  top: 15%;
+  left: 33%;
+  color: black;
+}
+
+.spectacles .mins .second {
+  position: absolute;
+  top: 40%;
+  left: 28%;
+}
+
+.spectacles .secs {
+  position: absolute;
+  border: 1px solid #dbdbdb;
+  top: 78%;
+  left: 65%;
+  width: 12%;
+  height: 4em;
+}
+
+.spectacles .secs .first {
+  position: absolute;
+  top: 15%;
+  left: 33%;
+  color: black;
+}
+
+.spectacles .secs .second {
+  position: absolute;
+  top: 40%;
+  left: 28%;
+}
+
+.girl {
+  width: 100%;
+  height: 566px;
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: cover;
+}
+
+.our-products-two img {
+  width: 100%;
+}
+
+.our-products-two ul li {
+  padding: 0 2em 0 0;
+}
+
+.our-products-two .item {
+  position: relative;
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.our-products-two .item .overlay {
+  width: 88%;
+  height: 78%;
+  position: absolute;
+  top: 0;
+  left: 6%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.our-products-two .item .overlay .card {
+  position: absolute;
+  top: 82%;
+  left: 25%;
+  background: black;
+  border-radius: 30px;
+}
+
+.our-products-two .item .overlay .heart {
+  position: absolute;
+  left: 83%;
+  top: 3%;
+  font-size: 20px;
+  color: white;
+}
+
+.item:hover .overlay {
+  opacity: 1;
+}
+
+.our-blog {
+  font-size: 14px;
+}
+
+.img:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.img {
+  overflow: hidden;
+}
+
+.img img {
+  width: 100%;
+}
+
+.instagram img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  background: #f0f0f0;
+}
+
+footer .get-in-touch p {
+  font-size: 13px;
+}
+
+footer li {
+  padding: 0.3em;
+  color: #888888;
+  font-size: 13px;
+}
+
+footer li i {
+  font-size: 20px;
+  color: #888888;
+}
+
+footer li i:hover {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  color: #e67e22;
+  cursor: pointer;
+}
+
+footer li:hover {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  color: chocolate;
+  cursor: pointer;
+}
+
+footer .email button {
+  width: 53%;
+  height: 41px;
+  border-radius: 50px;
+  outline: none;
+}
+
+footer .email button:hover {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  background: #e67e22;
+  cursor: pointer;
+}
+
+footer .email input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid grey;
+  outline: none;
+  background: transparent;
+}
+/*# sourceMappingURL=thirdPage.css.map */

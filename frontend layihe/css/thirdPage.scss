@@ -1,0 +1,435 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a:hover{
+    color: #888888;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #888888;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  li {
+    padding-top: 0.7em;
+  }
+}
+.social {
+  li {
+    padding: 0 1em 0 0;
+    font-size: 20px;
+  }
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.icon {
+  a {
+    padding: 1em;
+  }
+  .backet {
+    position: relative;
+  }
+  span {
+    position: absolute;
+    left: 1.9em;
+  }
+}
+
+select {
+  background: transparent;
+  border: none;
+  color: #929292;
+  outline: none;
+}
+////Carousel////////////////
+.carousel-inner {
+  .women-collection {
+    position: absolute;
+    top: 50%;
+    color: #888888;
+    left: 36%;
+    letter-spacing: 0.2em;
+  }
+  .new-arrival {
+    position: absolute;
+    top: 26%;
+    color: black;
+    left: 31%;
+    font-size: 5em;
+    letter-spacing: 2px;
+  }
+  button {
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    width: 12%;
+    border-radius: 26px;
+    height: 3em;
+    transition: 0.7s;
+  }
+  button:hover {
+    background: #e74c3c;
+    color: white;
+  }
+}
+////////////////////////////
+
+////////////Images///////////////
+.images {
+  .img {
+    position: relative;
+    transition: 0.6s;
+    overflow: hidden;
+
+    a {
+      position: absolute;
+      top: 78%;
+      left: 32%;
+      color: black;
+      width: 40%;
+      height: 2.5em;
+      background: rgba(255, 255, 255, 0.95);
+      text-align: center;
+      transition-duration: 0.5s;
+    }
+    a:hover {
+      background: #e74c3c;
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+  .sign-up {
+    height: 289px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f2f2f2;
+    .sign {
+      width: 70%;
+      text-align: center;
+      button {
+        width: 81%;
+        height: 58px;
+        border-radius: 50px;
+        outline: none;
+      }
+      button:hover {
+        transition-duration: 0.5s;
+        background: #e74c3c;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.img:hover img {
+  transform: scale(1.1);
+  transition: all 0.4s linear;
+}
+/////////////////////////////////
+
+/////////////OUR PRODUCTS////////
+
+.our-products {
+  img {
+    width: 100%;
+  }
+}
+
+.item {
+  position: relative;
+  display: block;
+  position: relative;
+  transition: all 0.4s linear;
+  .overlay {
+    width: 100%;
+    height: 83%;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.4s ease-in-out;
+    .card {
+      position: absolute;
+      top: 82%;
+      left: 25%;
+      background: black;
+      border-radius: 30px;
+    }
+    .heart {
+      position: absolute;
+      left: 83%;
+      top: 3%;
+      font-size: 20px;
+      color: white;
+    }
+  }
+}
+.item:hover .overlay {
+  opacity: 1;
+}
+
+/////////////////////////////////
+
+////////////////THE GIRL/////////////
+.spectacle {
+  overflow: hidden;
+}
+.the-girl {
+  position: relative;
+  img {
+    width: 100%;
+  }
+}
+.spectacles {
+  position: relative;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  a {
+    position: absolute;
+    top: 54%;
+    left: 35%;
+  }
+  .first-price {
+    position: absolute;
+    top: 61%;
+    left: 40%;
+  }
+  .second-price {
+    position: absolute;
+    top: 61%;
+    left: 50%;
+  }
+  .days {
+    position: absolute;
+    border: 1px solid #dbdbdb;
+    top: 78%;
+    left: 23%;
+    width: 12%;
+    height: 4em;
+    .first {
+      position: absolute;
+      top: 15%;
+      left: 33%;
+      color: black;
+    }
+    .second {
+      position: absolute;
+      top: 40%;
+      left: 28%;
+    }
+  }
+  .hrs {
+    position: absolute;
+    border: 1px solid #dbdbdb;
+    top: 78%;
+    left: 37%;
+    width: 12%;
+    height: 4em;
+    .first {
+      position: absolute;
+      top: 15%;
+      left: 33%;
+      color: black;
+    }
+    .second {
+      position: absolute;
+      top: 40%;
+      left: 32%;
+    }
+  }
+  .mins {
+    position: absolute;
+    border: 1px solid #dbdbdb;
+    top: 78%;
+    left: 51%;
+    width: 12%;
+    height: 4em;
+    .first {
+      position: absolute;
+      top: 15%;
+      left: 33%;
+      color: black;
+    }
+    .second {
+      position: absolute;
+      top: 40%;
+      left: 28%;
+    }
+  }
+
+  .secs {
+    position: absolute;
+    border: 1px solid #dbdbdb;
+    top: 78%;
+    left: 65%;
+    width: 12%;
+    height: 4em;
+    .first {
+      position: absolute;
+      top: 15%;
+      left: 33%;
+      color: black;
+    }
+    .second {
+      position: absolute;
+      top: 40%;
+      left: 28%;
+    }
+  }
+}
+
+.girl {
+  width: 100%;
+  height: 566px;
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: cover;
+}
+/////////////////////////////////////
+
+/////////OUR PRODUCTS 2//////////////
+.our-products-two {
+  img {
+    width: 100%;
+  }
+  ul {
+    li {
+      padding: 0 2em 0 0;
+    }
+  }
+
+  .item {
+    position: relative;
+    display: block;
+    position: relative;
+    transition: all 0.4s linear;
+    .overlay {
+      width: 88%;
+      height: 78%;
+      position: absolute;
+      top: 0;
+      left: 6%;
+      opacity: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: all 0.4s ease-in-out;
+      .card {
+        position: absolute;
+        top: 82%;
+        left: 25%;
+        background: black;
+        border-radius: 30px;
+      }
+      .heart {
+        position: absolute;
+        left: 83%;
+        top: 3%;
+        font-size: 20px;
+        color: white;
+      }
+    }
+  }
+}
+.item:hover .overlay {
+  opacity: 1;
+}
+/////////////////////////////////////
+
+////////////OUR BLOG////////////////
+.our-blog {
+  font-size: 14px;
+}
+.img:hover img {
+  transform: scale(1.1);
+  transition: all 0.4s linear;
+}
+.img {
+  img {
+    width: 100%;
+  }
+  overflow: hidden;
+}
+
+/////////////////////////////////////
+
+////////INSTAGRAM////////////
+.instagram {
+  img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/////////////////////////////
+
+/////////////////////////FOOTER///////////////
+footer {
+    background: #f0f0f0;
+    .get-in-touch {
+      p {
+        font-size: 13px;
+      }
+    }
+  
+    li {
+      padding: 0.3em;
+      color: #888888;
+      font-size: 13px;
+      i {
+        font-size: 20px;
+        color: #888888;
+      }
+      i:hover {
+        transition-duration: 0.5s;
+        color: #e67e22;
+        cursor: pointer;
+      }
+    }
+    li:hover {
+      transition-duration: 0.5s;
+      color: chocolate;
+      cursor: pointer;
+    }
+    .email {
+      button {
+        width: 53%;
+        height: 41px;
+        border-radius: 50px;
+        outline: none;
+      }
+      button:hover {
+        transition-duration: 0.5s;
+        background: #e67e22;
+        cursor: pointer;
+      }
+      input {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid grey;
+        outline: none;
+        background: transparent;
+      }
+    }
+  }
+  
+  
+  //////////////////////////////////////////////
+  
