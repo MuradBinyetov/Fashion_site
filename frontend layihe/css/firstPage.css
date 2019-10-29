@@ -119,12 +119,15 @@ p {
 .img:hover img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  -webkit-transition: all 0.4s linear;
-  transition: all 0.4s linear;
 }
 
 .img {
   overflow: hidden;
+}
+
+img {
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
 }
 
 .item {
@@ -261,30 +264,52 @@ p {
   background: #f2f2f2;
 }
 
+.the-girl img {
+  width: 100%;
+}
+
 .the-girl .girl {
   position: relative;
 }
 
-.the-girl .girl p {
+.the-girl .girl .absolute {
   position: absolute;
-  top: 140px;
-  left: 182px;
-  font-size: 40px;
+  top: 31%;
+  left: 26%;
+}
+
+.the-girl .girl p {
+  font-size: 2em;
 }
 
 .the-girl .girl h3 {
-  position: absolute;
-  top: 200px;
-  left: 145px;
-  font-size: 60px;
+  font-size: 4em;
 }
 
 .the-girl .girl a {
-  position: absolute;
-  top: 270px;
-  left: 180px;
-  font-size: 20px;
-  letter-spacing: 4px;
+  font-size: 1.3em;
+  letter-spacing: 0.07em;
+}
+
+@media screen and (max-width: 576px) {
+  .the-girl .girl {
+    position: relative;
+  }
+  .the-girl .girl .absolute {
+    position: absolute;
+    top: 31%;
+    left: 26%;
+  }
+  .the-girl .girl p {
+    font-size: 1em;
+  }
+  .the-girl .girl h3 {
+    font-size: 2em;
+  }
+  .the-girl .girl a {
+    font-size: 0.7em;
+    letter-spacing: 0.07em;
+  }
 }
 
 .spectacles {
@@ -331,7 +356,7 @@ p {
   left: 28%;
 }
 
-.hrs {
+.spectacles .hrs {
   position: absolute;
   border: 1px solid #dbdbdb;
   top: 78%;
@@ -340,20 +365,20 @@ p {
   height: 4em;
 }
 
-.hrs .first {
+.spectacles .hrs .first {
   position: absolute;
   top: 15%;
   left: 33%;
   color: black;
 }
 
-.hrs .second {
+.spectacles .hrs .second {
   position: absolute;
   top: 40%;
   left: 32%;
 }
 
-.mins {
+.spectacles .mins {
   position: absolute;
   border: 1px solid #dbdbdb;
   top: 78%;
@@ -362,20 +387,20 @@ p {
   height: 4em;
 }
 
-.mins .first {
+.spectacles .mins .first {
   position: absolute;
   top: 15%;
   left: 33%;
   color: black;
 }
 
-.mins .second {
+.spectacles .mins .second {
   position: absolute;
   top: 40%;
   left: 28%;
 }
 
-.secs {
+.spectacles .secs {
   position: absolute;
   border: 1px solid #dbdbdb;
   top: 78%;
@@ -384,14 +409,14 @@ p {
   height: 4em;
 }
 
-.secs .first {
+.spectacles .secs .first {
   position: absolute;
   top: 15%;
   left: 33%;
   color: black;
 }
 
-.secs .second {
+.spectacles .secs .second {
   position: absolute;
   top: 40%;
   left: 28%;
@@ -458,5 +483,9 @@ footer .email input {
   border-bottom: 1px solid grey;
   outline: none;
   background: transparent;
+}
+
+.info {
+  text-align: center;
 }
 /*# sourceMappingURL=firstPage.css.map */

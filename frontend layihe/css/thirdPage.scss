@@ -2,8 +2,8 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-a:hover{
-    color: #888888;
+a:hover {
+  color: #888888;
 }
 
 li {
@@ -52,6 +52,12 @@ select {
   border: none;
   color: #929292;
   outline: none;
+}
+@media screen and(max-width:1200px) {
+  header {
+    display: none;
+  }
+  
 }
 ////Carousel////////////////
 .carousel-inner {
@@ -382,54 +388,52 @@ select {
 
 /////////////////////////FOOTER///////////////
 footer {
-    background: #f0f0f0;
-    .get-in-touch {
-      p {
-        font-size: 13px;
-      }
-    }
-  
-    li {
-      padding: 0.3em;
-      color: #888888;
+  background: #f0f0f0;
+  .get-in-touch {
+    p {
       font-size: 13px;
-      i {
-        font-size: 20px;
-        color: #888888;
-      }
-      i:hover {
-        transition-duration: 0.5s;
-        color: #e67e22;
-        cursor: pointer;
-      }
-    }
-    li:hover {
-      transition-duration: 0.5s;
-      color: chocolate;
-      cursor: pointer;
-    }
-    .email {
-      button {
-        width: 53%;
-        height: 41px;
-        border-radius: 50px;
-        outline: none;
-      }
-      button:hover {
-        transition-duration: 0.5s;
-        background: #e67e22;
-        cursor: pointer;
-      }
-      input {
-        width: 100%;
-        border: none;
-        border-bottom: 1px solid grey;
-        outline: none;
-        background: transparent;
-      }
     }
   }
-  
-  
-  //////////////////////////////////////////////
-  
+
+  li {
+    padding: 0.3em;
+    color: #888888;
+    font-size: 13px;
+    i {
+      font-size: 20px;
+      color: #888888;
+    }
+    i:hover {
+      transition-duration: 0.5s;
+      color: #e67e22;
+      cursor: pointer;
+    }
+  }
+  li:hover {
+    transition-duration: 0.5s;
+    color: chocolate;
+    cursor: pointer;
+  }
+  .email {
+    button {
+      width: 53%;
+      height: 41px;
+      border-radius: 50px;
+      outline: none;
+    }
+    button:hover {
+      transition-duration: 0.5s;
+      background: #e67e22;
+      cursor: pointer;
+    }
+    input {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid grey;
+      outline: none;
+      background: transparent;
+    }
+  }
+}
+
+//////////////////////////////////////////////

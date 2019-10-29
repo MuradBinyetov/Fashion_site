@@ -1,0 +1,310 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+select {
+  outline: none;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+a:hover {
+  color: #333333;
+}
+
+p {
+  color: #929292;
+}
+
+pre {
+  color: #929292;
+}
+
+.top-bar {
+  background-color: #f5f5f5;
+}
+
+.select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.select span {
+  color: #929292;
+}
+
+.select select {
+  background: transparent;
+  border: none;
+  color: #929292;
+}
+
+.social li {
+  padding: 0 0.4em 0 0;
+  font-size: 18px;
+}
+
+.social li a {
+  color: #888888;
+}
+
+.logo nav ul li {
+  padding: 0.7em;
+}
+
+.logo nav ul li .sale {
+  color: #e65540;
+}
+
+.logo .icon a {
+  padding: 1em;
+}
+
+.logo .icon .backet {
+  position: relative;
+}
+
+.logo .icon span {
+  position: absolute;
+  right: 2em;
+}
+
+.blog {
+  position: relative;
+}
+
+.blog .bg-image {
+  width: 100%;
+  height: 239px;
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: cover;
+}
+
+.blog h2 {
+  position: absolute;
+  top: 39%;
+  left: 40%;
+  font-size: 50px;
+  color: #ffffff;
+}
+
+.blog p {
+  position: absolute;
+  top: 65%;
+  left: 35%;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.img:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.img {
+  overflow: hidden;
+}
+
+img {
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.sections .continue a {
+  text-decoration: none;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.sections .continue a:hover {
+  color: #e74c3c;
+}
+
+.sections img {
+  width: 100%;
+}
+
+.sections .search {
+  position: relative;
+}
+
+.sections .search i {
+  position: absolute;
+  right: 5%;
+  top: 16%;
+}
+
+.sections .search input {
+  border-radius: 34px;
+  width: 100%;
+  height: 2%;
+}
+
+.sections .categories ul .bottom {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.sections .categories ul li {
+  padding: 1em;
+  border-top: 1px solid #e6e6e6;
+}
+
+.sections .categories ul li a {
+  color: #a9a9a9;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  text-decoration: none;
+}
+
+.sections .categories ul li a:hover {
+  color: #e74c3c;
+}
+
+.products a {
+  width: 100%;
+  text-decoration: none;
+}
+
+.products a img {
+  width: 100%;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.products a img:hover {
+  opacity: 0.8;
+}
+
+.products li {
+  padding-top: 0.8em;
+}
+
+.products li div a {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.products li div a:hover {
+  color: #e74c3c;
+}
+
+.search .form-control {
+  outline: none;
+  border-color: #d9d9d9;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.date li {
+  padding: 0.5em;
+}
+
+.date li a {
+  text-decoration: none;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  color: #a9a9a9;
+}
+
+.date li a:hover {
+  color: #e74c3c;
+}
+
+.number li {
+  padding: 0.5em;
+  color: #a9a9a9;
+}
+
+.tags a {
+  font-family: Montserrat-Regular;
+  font-size: 13px;
+  color: #888;
+  line-height: 1.5;
+  font-size: 14px;
+  padding: 2px 15px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  margin: 3px;
+  text-decoration: none;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.tags a:hover {
+  color: #e74c3c;
+  border-color: #e74c3c;
+}
+
+footer {
+  background: #f0f0f0;
+}
+
+footer .get-in-touch p {
+  font-size: 13px;
+}
+
+footer li {
+  padding: 0.3em;
+  color: #888888;
+  font-size: 13px;
+}
+
+footer li i {
+  font-size: 20px;
+  color: #888888;
+}
+
+footer li i:hover {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  color: #e67e22;
+  cursor: pointer;
+}
+
+footer li:hover {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  color: chocolate;
+  cursor: pointer;
+}
+
+footer .email button {
+  width: 53%;
+  height: 41px;
+  border-radius: 50px;
+  outline: none;
+}
+
+footer .email button:hover {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  background: #e67e22;
+  cursor: pointer;
+}
+
+footer .email input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid grey;
+  outline: none;
+  background: transparent;
+}
+/*# sourceMappingURL=blog.css.map */

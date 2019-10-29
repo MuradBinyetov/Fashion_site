@@ -15,11 +15,12 @@
     <link rel="stylesheet" href="css/shopPage.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
     <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js> </script> <script
         src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="css/imagehover.min.css">
+
 </head>
 
 <body>
@@ -119,15 +120,13 @@
                         <h4>Filters</h4>
                     </div>
                     <div class="filter-bar pt-5">
-                        <div>
+                        <div class="mb-2">
                             <h4>Price</h4>
                         </div>
-                        <div>
-                            <!-- burda filter bar olacaq -->
-                        </div>
+                        <div class="flat-slider" id="flat-slider"></div>
                         <div class="money-filter d-flex justify-content-between pb-5">
-                            <button class="btn btn-dark">Filter</button>
-                            <div>
+                            <button class="btn btn-dark mt-5">Filter</button>
+                            <div class="mt-5">
                                 <span>Range:</span>
                                 <span>$</span>
                                 <span>50</span>
@@ -432,7 +431,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
@@ -441,7 +440,11 @@
         crossorigin="anonymous"></script>
 
     <script>
-
+        $('#flat-slider').slider({
+            orientation: 'horizontal',
+            range: true,
+            values: [17, 67]
+        });
     </script>
 </body>
 

@@ -2,6 +2,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 li {
   list-style: none;
 }
@@ -114,10 +115,12 @@ p {
 }
 .img:hover img {
   transform: scale(1.1);
-  transition: all 0.4s linear;
 }
 .img {
   overflow: hidden;
+}
+img {
+  transition: all 0.4s linear;
 }
 .item {
   position: relative;
@@ -228,28 +231,50 @@ p {
     }
   }
 }
+
 .the-girl {
+  img {
+    width: 100%;
+  }
+
   background: #f2f2f2;
+
   .girl {
     position: relative;
-    p {
+    .absolute {
       position: absolute;
-      top: 140px;
-      left: 182px;
-      font-size: 40px;
+      top: 31%;
+      left: 26%;
+    }
+    p {
+      font-size: 2em;
     }
     h3 {
-      position: absolute;
-      top: 200px;
-      left: 145px;
-      font-size: 60px;
+      font-size: 4em;
     }
     a {
-      position: absolute;
-      top: 270px;
-      left: 180px;
-      font-size: 20px;
-      letter-spacing: 4px;
+      font-size: 1.3em;
+      letter-spacing: 0.07em;
+    }
+  }
+  @media screen and(max-width:576px) {
+    .girl {
+      position: relative;
+      .absolute {
+        position: absolute;
+        top: 31%;
+        left: 26%;
+      }
+      p {
+        font-size: 1em;
+      }
+      h3 {
+        font-size: 2em;
+      }
+      a {
+        font-size: 0.7em;
+        letter-spacing: 0.07em;
+      }
     }
   }
 }
@@ -289,64 +314,66 @@ p {
       left: 28%;
     }
   }
+  .hrs {
+    position: absolute;
+    border: 1px solid #dbdbdb;
+    top: 78%;
+    left: 37%;
+    width: 12%;
+    height: 4em;
+    .first {
+      position: absolute;
+      top: 15%;
+      left: 33%;
+      color: black;
+    }
+    .second {
+      position: absolute;
+      top: 40%;
+      left: 32%;
+    }
+  }
+  .mins {
+    position: absolute;
+    border: 1px solid #dbdbdb;
+    top: 78%;
+    left: 51%;
+    width: 12%;
+    height: 4em;
+    .first {
+      position: absolute;
+      top: 15%;
+      left: 33%;
+      color: black;
+    }
+    .second {
+      position: absolute;
+      top: 40%;
+      left: 28%;
+    }
+  }
+  .secs {
+    position: absolute;
+    border: 1px solid #dbdbdb;
+    top: 78%;
+    left: 65%;
+    width: 12%;
+    height: 4em;
+    .first {
+      position: absolute;
+      top: 15%;
+      left: 33%;
+      color: black;
+    }
+    .second {
+      position: absolute;
+      top: 40%;
+      left: 28%;
+    }
+  }
+  
 }
-.hrs {
-  position: absolute;
-  border: 1px solid #dbdbdb;
-  top: 78%;
-  left: 37%;
-  width: 12%;
-  height: 4em;
-  .first {
-    position: absolute;
-    top: 15%;
-    left: 33%;
-    color: black;
-  }
-  .second {
-    position: absolute;
-    top: 40%;
-    left: 32%;
-  }
-}
-.mins {
-  position: absolute;
-  border: 1px solid #dbdbdb;
-  top: 78%;
-  left: 51%;
-  width: 12%;
-  height: 4em;
-  .first {
-    position: absolute;
-    top: 15%;
-    left: 33%;
-    color: black;
-  }
-  .second {
-    position: absolute;
-    top: 40%;
-    left: 28%;
-  }
-}
-.secs {
-  position: absolute;
-  border: 1px solid #dbdbdb;
-  top: 78%;
-  left: 65%;
-  width: 12%;
-  height: 4em;
-  .first {
-    position: absolute;
-    top: 15%;
-    left: 33%;
-    color: black;
-  }
-  .second {
-    position: absolute;
-    top: 40%;
-    left: 28%;
-  }
-}
+
 .our-blog {
   img {
     width: 100%;
@@ -404,4 +431,8 @@ footer {
       background: transparent;
     }
   }
+}
+
+.info{
+  text-align: center;
 }

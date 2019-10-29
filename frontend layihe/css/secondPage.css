@@ -148,11 +148,12 @@ header select {
 }
 
 .iframe {
-  position: relative;
-}
-
-.iframe img {
   width: 100%;
+  height: 573px;
+  background-position: center 14.2396px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
 }
 
 .iframe .beauty {

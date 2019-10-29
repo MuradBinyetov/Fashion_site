@@ -56,6 +56,12 @@ select {
   outline: none;
 }
 
+@media screen and (max-width: 1200px) {
+  header {
+    display: none;
+  }
+}
+
 .carousel-inner .women-collection {
   position: absolute;
   top: 50%;
