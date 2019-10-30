@@ -20,6 +20,8 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="css/imagehover.min.css">
+   
+    <link rel="stylesheet" href="sweetalert2.min.css">
 </head>
 
 <body>
@@ -82,7 +84,7 @@
                     <div class="backet">
                         <a href=""><img src="image/icon-header-02.png" alt="Icon"></a>
                     </div>
-                    <span>0</span>
+                    <span id="zero">0</span>
                 </div>
 
             </div>
@@ -218,66 +220,60 @@
                 </div>
             </article>
         </div>
-        <article>
-            <div class="the-girl container-fluid bg-light">
-                <div class="container">
-                    <div class="row p-4 ">
-                        <div class="img col-lg-6 col-sm-12 col-12 girl">
-                            <div class="">
-                                <img src="image/banner-08.webp" alt="image">
-                            </div>
-                            <div class="absolute">
-                                <div>
-                                    <p class="text-light">The Beauty</p>
-                                </div>
-                                <div>
-                                    <h3 class="text-light mr-3">Lookbook</h3>
-                                </div>
-                                <div>
-                                    <a class="text-light" href="#">View Collection</a>
-                                </div>
-                            </div>
+        
+        <div class="my_contain ">
+            <div class="myContainer">
+                <section class="row pad-50">
 
+                    <section class="collection col-12 col-lg-6">
+                        <div class="img_div">
+                            <img src="image/banner-08.webp" alt="image">
                         </div>
-                        <div class="img spectacles col-lg-6 col-12">
-                            <div class="">
-                                <img src="image/shop-item-09.webp" alt="image">
-                            </div>
-                            <div class="absolute">
-                                <div>
-                                    <a href="#">Gafas sol Hawkers one</a>
-                                </div>
-                                <div>
-                                    <span class="first-price"><del>$29.50</del></span>
-                                    <span class="second-price text-danger">$15.90</span>
-                                </div>
-                                <div class="days">
-                                    <p class="first">69</p>
-                                    <p class="second">days</p>
-                                </div>
-                                <div class="hrs">
-                                    <p class="first">12</p>
-                                    <p class="second">hrs</p>
-                                </div>
-                                <div class="mins">
-                                    <p class="first">59</p>
-                                    <p class="second">mins</p>
-                                </div>
-                                <div class="secs">
-                                    <p class="first">59</p>
-                                    <p class="second">secs</p>
-                                </div>
-                            </div>
 
-
+                        <div class="collection_content">
+                            <h4>The Beauty</h4>
+                            <h3>LOOKBOOK</h3>
+                            <a href="#">VIEW COLLECTION</a>
                         </div>
-                    </div>
+                    </section>
 
-                </div>
 
+                    <section class="timer col-12 col-lg-6">
+                        <div class="img-div">
+                            <img src="image/shop-item-09.webp" alt="image">
+                        </div>
+                        <div class="timer-content">
+                            <div class="cont-price">
+                                <a href="#">Gafas sol Hawkers one</a>
+                                <span class="span1">$29.50</span>
+                                <span class="span2">$15.90</span>
+                            </div>
+
+                            <div class="reverse_time ">
+                                <div class="box-time">
+                                    <span id="day">69</span>
+                                    <span>day</span>
+                                </div>
+                                <div class="box-time">
+                                    <span id="hrs">12</span>
+                                    <span>hrs</span>
+                                </div>
+
+                                <div class="box-time">
+                                    <span id="min">19</span>
+                                    <span>mins</span>
+                                </div>
+                                <div class="box-time">
+                                    <span id="sec">60</span>
+                                    <span>sec</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                </section>
             </div>
-
-        </article>
+        </div>
         <article class="our-blog">
             <div class="d-flex justify-content-center pt-5 pb-5">
                 <h2>OUR BLOG</h2>
@@ -289,7 +285,7 @@
                             <img src="image/blog-01.jpg" alt="image">
                         </div>
                         <div>
-                            <h4>Black Friday Guide: Best Sales & Discount Codes</h4>
+                            <a href=""><h5>Black Friday Guide: Best Sales & Discount Codes</h5></a>
                         </div>
                         <div>
                             <p>By Nancy Ward on July 22, 2017</p>
@@ -306,7 +302,7 @@
                             <img src="image//blog-02.webp" alt="image">
                         </div>
                         <div>
-                            <h4>The White Sneakers Nearly Every Fashion Girls Own</h4>
+                            <a href=""><h5>The White Sneakers Nearly Every Fashion Girls Own</h5></a>
                         </div>
                         <div>
                             <p>By Nancy Ward on July 18, 2017</p>
@@ -323,7 +319,7 @@
                             <img src="image//blog-03.webp" alt="image">
                         </div>
                         <div>
-                            <h4>New York SS 2018 Street Style: Annina Mislin</h4>
+                            <a href=""><h5>New York SS 2018 Street Style: Annina Mislin</h5></a>
                         </div>
                         <div>
                             <p>By Nancy Ward on July 2, 2017</p>
@@ -469,7 +465,8 @@
 
                     <div class="email col-12 col-lg-4">
                         <p class="font-weight-bold text-dark">NEWSLETTER</p>
-                        <input type="email" placeholder="email@example.com">
+                        <input id="input" type="email" placeholder="email@example.com">
+                        <div class="dv"></div>
                         <div class="pt-2">
                             <button class="btn btn-dark">SUBSCRIBE</button>
                         </div>
@@ -498,15 +495,9 @@
     </footer>
 
 
-
-
-
-
-
-
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -515,31 +506,14 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-    <script>
-        $(document).ready(function () {
-            $('.owl-carousel').owlCarousel({
-                loop: true,
-                margin: 10,
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 1,
-                        nav: true
-                    },
-                    600: {
-                        items: 3,
-                        nav: false
-                    },
-                    1000: {
-                        items: 4,
-                        nav: true,
-                        loop: false
-                    }
-                }
-            })
-        })
 
-    </script>
+
+
+    <script src="js/firstPage.js"></script>
+    
+
+
+    
 </body>
 
 </html>

@@ -30,6 +30,16 @@ header .social li {
   font-size: 23px;
 }
 
+header .social a {
+  color: #888888;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+header .social a:hover {
+  color: #c0392b;
+}
+
 header nav ul li {
   padding: 0 1.5em 0 0;
 }
@@ -173,12 +183,15 @@ header select {
   letter-spacing: 0.1em;
 }
 
-.iframe .play-iframe {
+.iframe .btn {
   position: absolute;
-  top: 55%;
+  top: 60%;
   left: 45%;
   font-size: 20px;
   color: white;
+  background: none;
+  border: none;
+  outline: none;
 }
 
 .img:hover img {

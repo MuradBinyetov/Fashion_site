@@ -15,11 +15,12 @@
     <link rel="stylesheet" href="css/shopPage.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
     <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js> </script> <script
         src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="css/imagehover.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
 </head>
 
@@ -100,7 +101,7 @@
     <main>
         <div class="container">
             <div class="row">
-                <aside class="options col-lg-3 pt-5">
+                <aside class="options col-12 col-md-3 col-lg-3 pt-5">
                     <div class="categories">
                         <div>
                             <h4>Categories</h4>
@@ -123,17 +124,13 @@
                         <div class="mb-2">
                             <h4>Price</h4>
                         </div>
-                        <div class="flat-slider" id="flat-slider"></div>
-                        <div class="money-filter d-flex justify-content-between pb-5">
+                        <div id="slider-range"></div>
+                        <p class="pt-3">
+                            <label for="amount">Price range:</label>
+                            <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                        </p>
+                        <div class="money-filter pb-5">
                             <button class="btn btn-dark mt-5">Filter</button>
-                            <div class="mt-5">
-                                <span>Range:</span>
-                                <span>$</span>
-                                <span>50</span>
-                                <span>-</span>
-                                <span>$</span>
-                                <span>200</span>
-                            </div>
                         </div>
 
                     </div>
@@ -161,7 +158,7 @@
                 </aside>
 
 
-                <div class="col-lg-9">
+                <div class="col-12 col-md-9 col-lg-9">
                     <div class="sort pt-5 ">
                         <div class="d-flex bd-highlight mb-3">
                             <select class="p-2 bd-highlight form-group ml-3">
@@ -171,7 +168,7 @@
                                 <option value="Price: high to low">Price: high to low</option>
 
                             </select>
-                            <select class="ml-3 p-2 bd-highlight form-group">
+                            <select class=" ml-3 p-2 bd-highlight form-group">
                                 <option value="Price">Price</option>
                                 <option value="$0.00 - $50.00">$0.00 - $50.00</option>
                                 <option value="$50.00 - $100.00">$50.00 - $100.00</option>
@@ -179,7 +176,7 @@
                                 <option value="$150.00 - $200.00">$150.00 - $200.00</option>
                                 <option value="$200.00+">$200.00+</option>
                             </select>
-                            <div class="ml-auto p-2 bd-highlight">
+                            <div class="d-none d-lg-block ml-auto p-2 bd-highlight">
                                 <p class="text-muted">Showing 1–12 of 16 results</p>
                             </div>
                         </div>
@@ -189,143 +186,143 @@
                     <article class="featured-products ">
                         <div class="container">
                             <div class="row">
-                                <div class="d-flex ">
-                                    <div class="item col-lg-4">
-                                        <img class="first" src="image/item-02.jpg" alt="photo">
-                                        <p>Herschel supply co 25l</p>
-                                        <p>$75.00</p>
-                                        <div class="overlay">
-                                            <button class="card btn btn-dark">add to card</button>
-                                            <i class="heart mdi mdi-heart-outline"></i>
-                                        </div>
 
+                                <div class="col-12 col-md-4 item col-lg-4">
+                                    <img class="first" src="image/item-02.jpg" alt="photo">
+                                    <p>Herschel supply co 25l</p>
+                                    <p>$75.00</p>
+                                    <div class="overlay">
+                                        <button class="card btn btn-dark">add to card</button>
+                                        <i class="heart mdi mdi-heart-outline"></i>
                                     </div>
-                                    <div class="item col-lg-4">
-                                        <div class="wekil">
-                                            <img class="wekil" src="image/item-03.jpg" alt="photo">
-                                        </div>
 
-                                        <p>Denim jacket blue</p>
-                                        <p>$92.50</p>
-                                        <div class="overlay">
-                                            <button class="card btn btn-dark">add to card</button>
-                                            <i class="heart mdi mdi-heart-outline"></i>
-                                        </div>
+                                </div>
+                                <div class="col-12 col-md-4 item col-lg-4">
+                                    <div class="wekil">
+                                        <img class="wekil" src="image/item-03.jpg" alt="photo">
                                     </div>
-                                    <div class="item col-lg-4">
-                                        <img src="image/item-05.jpg" alt="photo">
-                                        <p>Coach slim easton black</p>
-                                        <p>$165.90</p>
-                                        <div class="overlay">
-                                            <button class="card btn btn-dark">add to card</button>
-                                            <i class="heart mdi mdi-heart-outline"></i>
-                                        </div>
+
+                                    <p>Denim jacket blue</p>
+                                    <p>$92.50</p>
+                                    <div class="overlay">
+                                        <button class="card btn btn-dark">add to card</button>
+                                        <i class="heart mdi mdi-heart-outline"></i>
                                     </div>
+                                </div>
+                                <div class="col-12 col-md-4 item col-lg-4">
+                                    <img src="image/item-05.jpg" alt="photo">
+                                    <p>Coach slim easton black</p>
+                                    <p>$165.90</p>
+                                    <div class="overlay">
+                                        <button class="card btn btn-dark">add to card</button>
+                                        <i class="heart mdi mdi-heart-outline"></i>
+                                    </div>
+
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="d-flex ">
-                                    <div class="item col-lg-4">
-                                        <img class="first" src="image/item-07.jpg" alt="photo">
-                                        <p>Herschel supply co 25l</p>
-                                        <p>$75.00</p>
-                                        <div class="overlay">
-                                            <button class="card btn btn-dark">add to card</button>
-                                            <i class="heart mdi mdi-heart-outline"></i>
-                                        </div>
 
+                                <div class="col-12 col-md-4 item col-lg-4">
+                                    <img class="first" src="image/item-07.jpg" alt="photo">
+                                    <p>Herschel supply co 25l</p>
+                                    <p>$75.00</p>
+                                    <div class="overlay">
+                                        <button class="card btn btn-dark">add to card</button>
+                                        <i class="heart mdi mdi-heart-outline"></i>
                                     </div>
-                                    <div class="item col-lg-4">
-                                        <div class="wekil">
-                                            <img class="wekil" src="image/item-01.jpg" alt="photo">
-                                        </div>
 
-                                        <p>Denim jacket blue</p>
-                                        <p>$92.50</p>
-                                        <div class="overlay">
-                                            <button class="card btn btn-dark">add to card</button>
-                                            <i class="heart mdi mdi-heart-outline"></i>
-                                        </div>
+                                </div>
+                                <div class="col-12 col-md-4 item col-lg-4">
+                                    <div class="wekil">
+                                        <img class="wekil" src="image/item-01.jpg" alt="photo">
                                     </div>
-                                    <div class="item col-lg-4">
-                                        <img src="image/item-14.jpg" alt="photo">
-                                        <p>Coach slim easton black</p>
-                                        <p>$165.90</p>
-                                        <div class="overlay">
-                                            <button class="card btn btn-dark">add to card</button>
-                                            <i class="heart mdi mdi-heart-outline"></i>
-                                        </div>
+
+                                    <p>Denim jacket blue</p>
+                                    <p>$92.50</p>
+                                    <div class="overlay">
+                                        <button class="card btn btn-dark">add to card</button>
+                                        <i class="heart mdi mdi-heart-outline"></i>
                                     </div>
+                                </div>
+                                <div class="col-12 col-md-4 item col-lg-4">
+                                    <img src="image/item-14.jpg" alt="photo">
+                                    <p>Coach slim easton black</p>
+                                    <p>$165.90</p>
+                                    <div class="overlay">
+                                        <button class="card btn btn-dark">add to card</button>
+                                        <i class="heart mdi mdi-heart-outline"></i>
+                                    </div>
+
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="d-flex ">
-                                    <div class="item col-lg-4">
-                                        <img class="first" src="image/item-06.jpg" alt="photo">
-                                        <p>Herschel supply co 25l</p>
-                                        <p>$75.00</p>
-                                        <div class="overlay">
-                                            <button class="card btn btn-dark">add to card</button>
-                                            <i class="heart mdi mdi-heart-outline"></i>
-                                        </div>
 
+                                <div class="col-12 col-md-4 item col-lg-4">
+                                    <img class="first" src="image/item-06.jpg" alt="photo">
+                                    <p>Herschel supply co 25l</p>
+                                    <p>$75.00</p>
+                                    <div class="overlay">
+                                        <button class="card btn btn-dark">add to card</button>
+                                        <i class="heart mdi mdi-heart-outline"></i>
                                     </div>
-                                    <div class="item col-lg-4">
-                                        <div class="wekil">
-                                            <img class="wekil" src="image/item-08.jpg" alt="photo">
-                                        </div>
 
-                                        <p>Denim jacket blue</p>
-                                        <p>$92.50</p>
-                                        <div class="overlay">
-                                            <button class="card btn btn-dark">add to card</button>
-                                            <i class="heart mdi mdi-heart-outline"></i>
-                                        </div>
+                                </div>
+                                <div class="col-12 col-md-4 item col-lg-4">
+                                    <div class="wekil">
+                                        <img class="wekil" src="image/item-08.jpg" alt="photo">
                                     </div>
-                                    <div class="item col-lg-4">
-                                        <img src="image/item-10.jpg" alt="photo">
-                                        <p>Coach slim easton black</p>
-                                        <p>$165.90</p>
-                                        <div class="overlay">
-                                            <button class="card btn btn-dark">add to card</button>
-                                            <i class="heart mdi mdi-heart-outline"></i>
-                                        </div>
+
+                                    <p>Denim jacket blue</p>
+                                    <p>$92.50</p>
+                                    <div class="overlay">
+                                        <button class="card btn btn-dark">add to card</button>
+                                        <i class="heart mdi mdi-heart-outline"></i>
                                     </div>
+                                </div>
+                                <div class="col-12 col-md-4 item col-lg-4">
+                                    <img src="image/item-10.jpg" alt="photo">
+                                    <p>Coach slim easton black</p>
+                                    <p>$165.90</p>
+                                    <div class="overlay">
+                                        <button class="card btn btn-dark">add to card</button>
+                                        <i class="heart mdi mdi-heart-outline"></i>
+                                    </div>
+
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="d-flex ">
-                                    <div class="item col-lg-4">
-                                        <img class="first" src="image/item-11.jpg" alt="photo">
-                                        <p>Herschel supply co 25l</p>
-                                        <p>$75.00</p>
-                                        <div class="overlay">
-                                            <button class="card btn btn-dark">add to card</button>
-                                            <i class="heart mdi mdi-heart-outline"></i>
-                                        </div>
 
+                                <div class="col-12 col-md-4 item col-lg-4">
+                                    <img class="first" src="image/item-11.jpg" alt="photo">
+                                    <p>Herschel supply co 25l</p>
+                                    <p>$75.00</p>
+                                    <div class="overlay">
+                                        <button class="card btn btn-dark">add to card</button>
+                                        <i class="heart mdi mdi-heart-outline"></i>
                                     </div>
-                                    <div class="item col-lg-4">
-                                        <div class="wekil">
-                                            <img class="wekil" src="image/item-12.jpg" alt="photo">
-                                        </div>
 
-                                        <p>Denim jacket blue</p>
-                                        <p>$92.50</p>
-                                        <div class="overlay">
-                                            <button class="card btn btn-dark">add to card</button>
-                                            <i class="heart mdi mdi-heart-outline"></i>
-                                        </div>
+                                </div>
+                                <div class="col-12 col-md-4 item col-lg-4">
+                                    <div class="wekil">
+                                        <img class="wekil" src="image/item-12.jpg" alt="photo">
                                     </div>
-                                    <div class="item col-lg-4">
-                                        <img src="image/item-15.jpg" alt="photo">
-                                        <p>Coach slim easton black</p>
-                                        <p>$165.90</p>
-                                        <div class="overlay">
-                                            <button class="card btn btn-dark">add to card</button>
-                                            <i class="heart mdi mdi-heart-outline"></i>
-                                        </div>
+
+                                    <p>Denim jacket blue</p>
+                                    <p>$92.50</p>
+                                    <div class="overlay">
+                                        <button class="card btn btn-dark">add to card</button>
+                                        <i class="heart mdi mdi-heart-outline"></i>
                                     </div>
+                                </div>
+                                <div class="col-12 col-md-4 item col-lg-4">
+                                    <img src="image/item-15.jpg" alt="photo">
+                                    <p>Coach slim easton black</p>
+                                    <p>$165.90</p>
+                                    <div class="overlay">
+                                        <button class="card btn btn-dark">add to card</button>
+                                        <i class="heart mdi mdi-heart-outline"></i>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -342,78 +339,79 @@
         </div>
     </main>
     <footer class="pt-5">
+
         <div class="container">
             <div class="row">
-                <div class="d-flex flex-wrap pb-5">
-                    <div class="get-in-touch col-lg-4">
-                        <h5>GET IN TOUCH</h5>
-                        <p>Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call
-                            us on
-                            (+1) 96 716 6879</p>
-                        <ul class="d-flex">
-                            <li><a href="https://www.facebook.com"><i class="mdi mdi-facebook"></i></a></li>
-                            <li><a href="https://www.instagram.com"><i class="mdi mdi-instagram"></i></a></li>
-                            <li><a href="https://www.pinterest.com"><i class="mdi mdi-pinterest"></i></a></li>
-                            <li><a href="https://www.snapchat.com"><i class="mdi mdi-snapchat"></i></a></li>
-                            <li><a href="https://www.youtube.com"><i class="mdi mdi-youtube"></i></a></li>
+
+                <div class="get-in-touch col-12 col-lg-4">
+                    <h5>GET IN TOUCH</h5>
+                    <p>Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call
+                        us on
+                        (+1) 96 716 6879</p>
+                    <ul class="d-flex">
+                        <li><a href="https://www.facebook.com"><i class="mdi mdi-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com"><i class="mdi mdi-instagram"></i></a></li>
+                        <li><a href="https://www.pinterest.com"><i class="mdi mdi-pinterest"></i></a></li>
+                        <li><a href="https://www.snapchat.com"><i class="mdi mdi-snapchat"></i></a></li>
+                        <li><a href="https://www.youtube.com"><i class="mdi mdi-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-4 d-flex justify-content-around">
+                    <div>
+                        <p class="font-weight-bold text-dark">CATEGORIES</p>
+                        <ul>
+                            <li><a>Men</a></li>
+                            <li><a>Women</a></li>
+                            <li><a>Dresses</a></li>
+                            <li><a>Sunglasses</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-4 d-flex justify-content-around">
-                        <div>
-                            <p class="font-weight-bold text-dark">CATEGORIES</p>
-                            <ul>
-                                <li><a>Men</a></li>
-                                <li><a>Women</a></li>
-                                <li><a>Dresses</a></li>
-                                <li><a>Sunglasses</a></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <p class="font-weight-bold text-dark">LINKS</p>
-                            <ul>
-                                <li><a>Search</a></li>
-                                <li><a>About Us</a></li>
-                                <li><a>Contact Us</a></li>
-                                <li><a>Returns</a></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <p class="font-weight-bold text-dark">HELP</p>
-                            <ul>
-                                <li><a>Track Order</a></li>
-                                <li><a>Returns</a></li>
-                                <li><a>Shipping</a></li>
-                                <li><a>FAQs</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-                    <div class="email col-lg-4">
-                        <p class="font-weight-bold text-dark">NEWSLETTER</p>
-                        <input type="email" placeholder="email@example.com">
-                        <div class="pt-2">
-                            <button class="btn btn-dark">SUBSCRIBE</button>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="col-lg-12 pt-5 d-flex justify-content-center">
                     <div>
-                        <a href="#"><img src="image/paypal.png" alt="image"></a>
-                        <a href="#"><img src="image/visa.png" alt="image"></a>
-                        <a href="#"><img src="image/mastercard.png" alt="image"></a>
-                        <a href="#"><img src="image/express.png" alt="image"></a>
-                        <a href="#"><img src="image/discover.png" alt="image"></a>
+                        <p class="font-weight-bold text-dark">LINKS</p>
+                        <ul>
+                            <li><a>Search</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Contact Us</a></li>
+                            <li><a>Returns</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="font-weight-bold text-dark">HELP</p>
+                        <ul>
+                            <li><a>Track Order</a></li>
+                            <li><a>Returns</a></li>
+                            <li><a>Shipping</a></li>
+                            <li><a>FAQs</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="email col-12 col-lg-4">
+                    <p class="font-weight-bold text-dark">NEWSLETTER</p>
+                    <input type="email" placeholder="email@example.com">
+                    <div class="pt-2">
+                        <button class="btn btn-dark">SUBSCRIBE</button>
                     </div>
 
                 </div>
-                <div class="col-lg-12 d-flex justify-content-center pt-4 pb-4">
-                    <p>Copyright © 2017 Colorlib. All rights reserved.</p>
+            </div>
+
+            <div class="col-lg-12 pt-5 d-flex justify-content-center">
+                <div>
+                    <a href="#"><img src="image/paypal.png" alt="image"></a>
+                    <a href="#"><img src="image/visa.png" alt="image"></a>
+                    <a href="#"><img src="image/mastercard.png" alt="image"></a>
+                    <a href="#"><img src="image/express.png" alt="image"></a>
+                    <a href="#"><img src="image/discover.png" alt="image"></a>
                 </div>
 
             </div>
+            <div class="col-lg-12 d-flex justify-content-center pt-4 pb-4">
+                <p>Copyright © 2017 Colorlib. All rights reserved.</p>
+            </div>
+
+        </div>
 
         </div>
 
@@ -426,26 +424,36 @@
 
 
 
-
+    <script src="js/shop.js"></script>
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
-        $('#flat-slider').slider({
-            orientation: 'horizontal',
-            range: true,
-            values: [17, 67]
+        $(function () {
+            $("#slider-range").slider({
+                range: true,
+                min: 50,
+                max: 200,
+                values: [50, 200],
+                slide: function (event, ui) {
+                    $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+                }
+            });
+            $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+                " - $" + $("#slider-range").slider("values", 1));
         });
     </script>
+
+    
 </body>
 
 </html>
