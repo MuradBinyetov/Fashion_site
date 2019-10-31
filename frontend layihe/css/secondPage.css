@@ -138,6 +138,16 @@ header select {
 }
 
 .item .overlay .card {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  border: none;
+}
+
+.item .overlay .card:hover {
+  background: #e74c3c;
+}
+
+.item .overlay .card {
   position: absolute;
   top: 87%;
   left: 30%;
@@ -192,6 +202,16 @@ header select {
   background: none;
   border: none;
   outline: none;
+}
+
+.our-blog h4 {
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.our-blog h4:hover {
+  color: #e74c3c;
+  cursor: pointer;
 }
 
 .img:hover img {
@@ -266,5 +286,11 @@ footer .email input {
   border-bottom: 1px solid grey;
   outline: none;
   background: transparent;
+}
+
+footer .dv {
+  height: 2px;
+  background: #f39c12;
+  width: 0px;
 }
 /*# sourceMappingURL=secondPage.css.map */

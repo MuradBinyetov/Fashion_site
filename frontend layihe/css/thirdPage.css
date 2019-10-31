@@ -49,6 +49,25 @@ nav li {
   left: 1.9em;
 }
 
+header .main-menu a {
+  text-decoration: none;
+}
+
+header .social li {
+  padding: 0 0.5em 0 0;
+  font-size: 23px;
+}
+
+header .social a {
+  color: #888888;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+header .social a:hover {
+  color: #c0392b;
+}
+
 select {
   background: transparent;
   border: none;
@@ -167,6 +186,16 @@ select {
 
 .our-products img {
   width: 100%;
+}
+
+.card {
+  border: none;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.card:hover {
+  background: #e74c3c !important;
 }
 
 .item {
@@ -394,6 +423,16 @@ select {
   font-size: 14px;
 }
 
+.our-blog h4 {
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.our-blog h4:hover {
+  color: #e74c3c;
+  cursor: pointer;
+}
+
 .img:hover img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -453,12 +492,13 @@ footer .email button {
   height: 41px;
   border-radius: 50px;
   outline: none;
+  border: none;
 }
 
 footer .email button:hover {
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
-  background: #e67e22;
+  background: #e74c3c;
   cursor: pointer;
 }
 
@@ -468,5 +508,11 @@ footer .email input {
   border-bottom: 1px solid grey;
   outline: none;
   background: transparent;
+}
+
+footer .dv {
+  height: 1px;
+  background: #f39c12;
+  width: 0px;
 }
 /*# sourceMappingURL=thirdPage.css.map */

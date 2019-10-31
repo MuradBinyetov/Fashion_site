@@ -20,7 +20,7 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="css/imagehover.min.css">
-   
+
     <link rel="stylesheet" href="sweetalert2.min.css">
 </head>
 
@@ -64,14 +64,20 @@
                     <a href="#"><img src="image/logo.png" alt="Site-logo"></a>
                 </div>
                 <nav class="col-lg-4">
-                    <ul class="d-flex">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Shop</a></li>
-                        <li><a class="sale" href="">Sale</a></li>
-                        <li><a href="">Features</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contact</a></li>
+                    <ul class="relative d-flex">
+                        <li class="home"><a href="">Home</a>
+                            <ul class="home-version">
+                                <li><a href="firstPage.html">Homepage V1</a></li>
+                                <li><a href="secondPage.html">Homepage V2</a></li>
+                                <li><a href="thirdPage.html">Homepage V3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="shopPage.html">Shop</a></li>
+                        <li><a class="sale" href="shopPage.html">Sale</a></li>
+                        <li><a href="featuresPage.html">Features</a></li>
+                        <li><a href="blogPage.html">Blog</a></li>
+                        <li><a href="aboutPage.html">About</a></li>
+                        <li><a href="contactPage.html">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="icon col-6 col-lg-4 d-flex justify-content-end">
@@ -220,7 +226,7 @@
                 </div>
             </article>
         </div>
-        
+
         <div class="my_contain ">
             <div class="myContainer">
                 <section class="row pad-50">
@@ -285,7 +291,9 @@
                             <img src="image/blog-01.jpg" alt="image">
                         </div>
                         <div>
-                            <a href=""><h5>Black Friday Guide: Best Sales & Discount Codes</h5></a>
+                            <a href="">
+                                <h5>Black Friday Guide: Best Sales & Discount Codes</h5>
+                            </a>
                         </div>
                         <div>
                             <p>By Nancy Ward on July 22, 2017</p>
@@ -302,7 +310,9 @@
                             <img src="image//blog-02.webp" alt="image">
                         </div>
                         <div>
-                            <a href=""><h5>The White Sneakers Nearly Every Fashion Girls Own</h5></a>
+                            <a href="">
+                                <h5>The White Sneakers Nearly Every Fashion Girls Own</h5>
+                            </a>
                         </div>
                         <div>
                             <p>By Nancy Ward on July 18, 2017</p>
@@ -319,7 +329,9 @@
                             <img src="image//blog-03.webp" alt="image">
                         </div>
                         <div>
-                            <a href=""><h5>New York SS 2018 Street Style: Annina Mislin</h5></a>
+                            <a href="">
+                                <h5>New York SS 2018 Street Style: Annina Mislin</h5>
+                            </a>
                         </div>
                         <div>
                             <p>By Nancy Ward on July 2, 2017</p>
@@ -510,10 +522,10 @@
 
 
     <script src="js/firstPage.js"></script>
-    
 
 
-    
+
+
 </body>
 
 </html>

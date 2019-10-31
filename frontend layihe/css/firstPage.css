@@ -48,6 +48,27 @@ p {
   color: #929292;
 }
 
+.relative {
+  position: relative;
+}
+
+.relative .home:hover .home-version {
+  display: block;
+}
+
+.relative .home-version {
+  position: absolute;
+  left: 0%;
+  display: none;
+  z-index: 25;
+  background: #2c3e50;
+  width: 40%;
+}
+
+.relative .home-version a {
+  color: #ecf0f1;
+}
+
 .social li {
   padding: 0 0.4em 0 0;
   font-size: 18px;
@@ -139,6 +160,16 @@ img {
 .item {
   position: relative;
   text-align: center;
+}
+
+.item .overlay .card {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  border: none;
+}
+
+.item .overlay .card:hover {
+  background: #e74c3c;
 }
 
 .item .overlay {
@@ -535,7 +566,7 @@ footer .email input {
 }
 
 footer .dv {
-  height: 2px;
+  height: 1px;
   background: #f39c12;
   width: 0px;
 }

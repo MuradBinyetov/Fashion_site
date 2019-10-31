@@ -95,9 +95,9 @@ var x = setInterval(function () {
 
 /////////////FOOTER/////////////////////
 
-
+let action = true;
 document.getElementById('input').addEventListener('click', function () {
-    let action = true;
+    
     if (action == true) {
         let interval = setInterval(function () {
 

@@ -27,8 +27,46 @@ for (let f of hearts) {
 
 ///////////////////////////////////////////////
 
+////////////TIMER///////////////////////////////
 
-/////////FOOTER////////////////////////////////
+let sec = document.getElementById('sec');
+let min = document.getElementById('min');
+let hrs = document.getElementById('hrs');
+let day = document.getElementById('day');
+
+var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+
+
+var x = setInterval(function () {
+
+
+    var now = new Date().getTime();
+
+
+    var distance = countDownDate - now;
+
+
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    sec.innerText = seconds;
+    min.innerText = minutes;
+    hrs.innerText = hours;
+    day.innerText = days;
+
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+
+
+////////////////////////////////////////////////
+
+/////////////FOOTER/////////////////////
+
 
 document.getElementById('input').addEventListener('click', function () {
     let action = true;
@@ -40,7 +78,7 @@ document.getElementById('input').addEventListener('click', function () {
             let a = parseInt(getComputedStyle(div).width);
             a += 10;
             div.style.width = `${a}px`;
-            if (a == 350) {
+            if (a == 270) {
                 clearInterval(interval);
                 action = false;
             }
@@ -49,4 +87,9 @@ document.getElementById('input').addEventListener('click', function () {
 
 })
 
-///////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////

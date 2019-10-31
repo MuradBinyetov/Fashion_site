@@ -63,6 +63,12 @@ pre {
 
 .social li a {
   color: #888888;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.social li a:hover {
+  color: #e74c3c;
 }
 
 .logo nav ul li {
@@ -290,13 +296,13 @@ footer .email button {
   width: 53%;
   height: 41px;
   border-radius: 50px;
-  outline: none;
+  border: none;
 }
 
 footer .email button:hover {
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
-  background: #e67e22;
+  background: #e74c3c;
   cursor: pointer;
 }
 
@@ -306,5 +312,11 @@ footer .email input {
   border-bottom: 1px solid grey;
   outline: none;
   background: transparent;
+}
+
+footer .dv {
+  height: 1px;
+  background: #f39c12;
+  width: 0px;
 }
 /*# sourceMappingURL=blog.css.map */

@@ -49,6 +49,10 @@ p {
     font-size: 18px;
     a {
       color: #888888;
+      transition-duration: 0.4s;
+    }
+    a:hover{
+      color: #e74c3c;
     }
   }
 }
@@ -198,6 +202,11 @@ p {
       left: 30%;
       background: black;
       border-radius: 30px;
+      transition-duration: 0.4s;
+      border: none;
+    }
+    .card:hover{
+      background: #e74c3c;
     }
     .heart {
       position: absolute;
@@ -205,6 +214,9 @@ p {
       top: 3%;
       font-size: 20px;
       color: white;
+    }
+    .heart:hover{
+      cursor: pointer;
     }
   }
 }
@@ -276,6 +288,11 @@ footer {
       outline: none;
       background: transparent;
     }
+  }
+  .dv {
+    height: 2px;
+    background: #f39c12;
+    width: 0px;
   }
 }
 

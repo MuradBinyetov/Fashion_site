@@ -23,6 +23,7 @@ p {
   color: #929292;
 }
 
+
 .top-bar {
   background-color: #f5f5f5;
 }
@@ -40,6 +41,23 @@ p {
     background: transparent;
     border: none;
     color: #929292;
+  }
+}
+.relative{
+  position: relative;
+  .home:hover .home-version{
+    display: block;
+  }
+  .home-version{
+    position: absolute;
+    left: 0%;
+    display: none;
+    z-index: 25;
+    background: #2c3e50;
+    width: 40%;
+    a{
+    color: #ecf0f1;
+    }
   }
 }
 
@@ -129,6 +147,16 @@ img {
 .item {
   position: relative;
   text-align: center;
+  .overlay{
+    .card{
+      transition-duration: 0.5s;
+      border: none;
+    }
+    .card:hover{
+      background: #e74c3c;
+
+    }
+  }
 }
 
 .item .overlay {
@@ -391,148 +419,7 @@ img {
   }
 }
 
-///////////////////////////////////////////////////////
 
-// .the-girl {
-//   img {
-//     width: 100%;
-//   }
-
-//   background: #f2f2f2;
-
-//   .girl {
-//     position: relative;
-//     .absolute {
-//       position: absolute;
-//       top: 31%;
-//       left: 26%;
-//     }
-//     p {
-//       font-size: 2em;
-//     }
-//     h3 {
-//       font-size: 4em;
-//     }
-//     a {
-//       font-size: 1.3em;
-//       letter-spacing: 0.07em;
-//     }
-//   }
-//   @media screen and(max-width:576px) {
-//     .girl {
-//       position: relative;
-//       .absolute {
-//         position: absolute;
-//         top: 31%;
-//         left: 26%;
-//       }
-//       p {
-//         font-size: 1em;
-//       }
-//       h3 {
-//         font-size: 2em;
-//       }
-//       a {
-//         font-size: 0.7em;
-//         letter-spacing: 0.07em;
-//       }
-//     }
-//   }
-// }
-// .spectacles {
-//   position: relative;
-//   a {
-//     position: absolute;
-//     top: 54%;
-//     left: 35%;
-//   }
-//   .first-price {
-//     position: absolute;
-//     top: 61%;
-//     left: 40%;
-//   }
-//   .second-price {
-//     position: absolute;
-//     top: 61%;
-//     left: 50%;
-//   }
-//   .days {
-//     position: absolute;
-//     border: 1px solid #dbdbdb;
-//     top: 78%;
-//     left: 23%;
-//     width: 12%;
-//     height: 4em;
-//     .first {
-//       position: absolute;
-//       top: 15%;
-//       left: 33%;
-//       color: black;
-//     }
-//     .second {
-//       position: absolute;
-//       top: 40%;
-//       left: 28%;
-//     }
-//   }
-//   .hrs {
-//     position: absolute;
-//     border: 1px solid #dbdbdb;
-//     top: 78%;
-//     left: 37%;
-//     width: 12%;
-//     height: 4em;
-//     .first {
-//       position: absolute;
-//       top: 15%;
-//       left: 33%;
-//       color: black;
-//     }
-//     .second {
-//       position: absolute;
-//       top: 40%;
-//       left: 32%;
-//     }
-//   }
-//   .mins {
-//     position: absolute;
-//     border: 1px solid #dbdbdb;
-//     top: 78%;
-//     left: 51%;
-//     width: 12%;
-//     height: 4em;
-//     .first {
-//       position: absolute;
-//       top: 15%;
-//       left: 33%;
-//       color: black;
-//     }
-//     .second {
-//       position: absolute;
-//       top: 40%;
-//       left: 28%;
-//     }
-//   }
-//   .secs {
-//     position: absolute;
-//     border: 1px solid #dbdbdb;
-//     top: 78%;
-//     left: 65%;
-//     width: 12%;
-//     height: 4em;
-//     .first {
-//       position: absolute;
-//       top: 15%;
-//       left: 33%;
-//       color: black;
-//     }
-//     .second {
-//       position: absolute;
-//       top: 40%;
-//       left: 28%;
-//     }
-//   }
-// }
 
 .our-blog {
   .col-md-4{
@@ -601,7 +488,7 @@ footer {
     }
   }
   .dv{
-    height: 2px;
+    height: 1px;
     background: #f39c12;
     width: 0px;
   }

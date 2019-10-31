@@ -48,6 +48,10 @@ p {
     font-size: 18px;
     a {
       color: #888888;
+      transition-duration: 0.4s;
+    }
+    a:hover{
+      color: #e74c3c;
     }
   }
 }
@@ -168,11 +172,11 @@ footer {
       width: 53%;
       height: 41px;
       border-radius: 50px;
-      outline: none;
+      border: none;
     }
     button:hover {
       transition-duration: 0.5s;
-      background: #e67e22;
+      background: #e74c3c;
       cursor: pointer;
     }
     input {
@@ -182,6 +186,11 @@ footer {
       outline: none;
       background: transparent;
     }
+  }
+  .dv{
+    height: 1px;
+    background: #f39c12;
+    width: 0px;
   }
 }
 

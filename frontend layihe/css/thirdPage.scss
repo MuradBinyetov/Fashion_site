@@ -47,6 +47,27 @@ nav {
   }
 }
 
+header {
+  .main-menu {
+    a {
+      text-decoration: none;
+    }
+  }
+  .social {
+    li {
+      padding: 0 0.5em 0 0;
+      font-size: 23px;
+    }
+    a {
+      color: #888888;
+      transition-duration: 0.4s;
+    }
+    a:hover {
+      color: #c0392b;
+    }
+  }
+}
+
 select {
   background: transparent;
   border: none;
@@ -57,7 +78,6 @@ select {
   header {
     display: none;
   }
-  
 }
 ////Carousel////////////////
 .carousel-inner {
@@ -155,6 +175,14 @@ select {
   img {
     width: 100%;
   }
+}
+
+.card {
+  border: none;
+  transition: all 0.4s;
+}
+.card:hover {
+  background: #e74c3c !important;
 }
 
 .item {
@@ -361,6 +389,13 @@ select {
 ////////////OUR BLOG////////////////
 .our-blog {
   font-size: 14px;
+  h4 {
+    transition-duration: 0.4s;
+  }
+  h4:hover {
+    color: #e74c3c;
+    cursor: pointer;
+  }
 }
 .img:hover img {
   transform: scale(1.1);
@@ -420,10 +455,11 @@ footer {
       height: 41px;
       border-radius: 50px;
       outline: none;
+      border: none;
     }
     button:hover {
       transition-duration: 0.5s;
-      background: #e67e22;
+      background: #e74c3c;
       cursor: pointer;
     }
     input {
@@ -433,6 +469,11 @@ footer {
       outline: none;
       background: transparent;
     }
+  }
+  .dv{
+    height: 1px;
+    background: #f39c12;
+    width: 0px;
   }
 }
 

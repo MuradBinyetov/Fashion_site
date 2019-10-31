@@ -65,13 +65,13 @@
                 </div>
                 <nav class="col-lg-4">
                     <ul class="d-flex">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Shop</a></li>
-                        <li><a class="sale" href="">Sale</a></li>
-                        <li><a href="">Features</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="firstPage.html">Home</a></li>
+                        <li><a href="shopPage.html">Shop</a></li>
+                        <li><a class="sale" href="shopPage.html">Sale</a></li>
+                        <li><a href="featuresPage.html">Features</a></li>
+                        <li><a href="blogPage.html">Blog</a></li>
+                        <li><a href="aboutPage.html">About</a></li>
+                        <li><a href="contactPage.html">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="icon col-6 col-lg-4 d-flex justify-content-end">
@@ -84,7 +84,7 @@
                     <div class="backet">
                         <a href=""><img src="image/icon-header-02.png" alt="Icon"></a>
                     </div>
-                    <span>0</span>
+                    <span id="zero">0</span>
                 </div>
 
             </div>
@@ -389,7 +389,8 @@
 
                 <div class="email col-12 col-lg-4">
                     <p class="font-weight-bold text-dark">NEWSLETTER</p>
-                    <input type="email" placeholder="email@example.com">
+                    <input id="input" type="email" placeholder="email@example.com">
+                    <div class="dv"></div>
                     <div class="pt-2">
                         <button class="btn btn-dark">SUBSCRIBE</button>
                     </div>
@@ -424,11 +425,12 @@
 
 
 
-    <script src="js/shop.js"></script>
+    
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -453,7 +455,8 @@
         });
     </script>
 
-    
+    <script src="js/shop.js"></script>
+
 </body>
 
 </html>
